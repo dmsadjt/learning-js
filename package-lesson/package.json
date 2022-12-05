@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "name": "package-lesson",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

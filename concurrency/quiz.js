@@ -49,14 +49,14 @@ const fetchingUserFromInternet = (isOffline) => {
 
 
 // TODO: 2
-const gettingUserName = () => {
-    fetchingUserFromInternet((error, user) => {
-        if (error) {
-            return error.message;
-        }
-        return user.name;
-    }, false);
-};
+async function gettingUserName() {
+    try {
+        const user = await fetchingUserFromInternet();
+        return user.name
+    } catch (rejectedReason) {
+        return rejectedReason
+    }
+}
 
 /**
  * Abaikan kode di bawah ini

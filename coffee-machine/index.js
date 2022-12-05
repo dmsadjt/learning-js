@@ -12,4 +12,7 @@ const makeCoffee = (type, mg) => {
     }
 }
 
+let name = "dimas"
+console.log(`hi $name`)
+
 makeCoffee("arabica", 170);
